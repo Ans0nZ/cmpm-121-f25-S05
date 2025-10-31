@@ -18,6 +18,7 @@ For this assignment, your task is to **analyze and improve the code in `src/main
 # Code Smells and Refactoring Report
 
 ## Identified Code Smells
+
 1. **Long Function** – The main update loop handled multiple responsibilities (input, logic, rendering).
 2. **Duplicate Code** – Similar rendering and UI update logic appeared in multiple places.
 3. **Poor Naming** – Some variables like `tmp`, `ctx`, and `cvs` lacked clarity.
@@ -25,6 +26,7 @@ For this assignment, your task is to **analyze and improve the code in `src/main
 5. **God Object** – Single file controlled too many game systems.
 
 ## Applied Refactoring Patterns
+
 1. **Extract Function** – Split large update function into `initGame()`, `update()`, and `render()`.
 2. **Rename Variable** – Improved variable naming for readability.
 3. **Introduce Parameter Object** – Created a `Player` class that groups related data and methods.
@@ -32,6 +34,7 @@ For this assignment, your task is to **analyze and improve the code in `src/main
 5. **Consolidate Duplicate Code** – Centralized drawing routines into helper functions.
 
 ## Results
+
 After refactoring, the code is modular and easier to maintain. Each module now has a clear responsibility, and future features (like new entities or visual effects) can be added with minimal changes.
 
 With Codespaces (or another environment supporting devcontainers):
